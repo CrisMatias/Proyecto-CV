@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:    "primary-row secundary-row";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr ;
+    overflow: hidden;
+}
+
+.primary-row{
+    display: grid;
+    height: 100%;
+    grid-area: primary-row;
+    grid-template-areas:    "photo"
+                            "information";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr ;
+    align-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    background: scroll;
+    border: #000000 solid 2px;
+}
+
+.photo-name{
+    justify-content: center;
+    text-align: center;
+    grid-area: photo;
+}
+
+.photo{
+    border: 8px solid #000000;
+    border-radius: 200px;
+    width: 200px;
+    transition: transform .4s;
+}
+
+.photo:hover{
+    transform: scale(1.2);
+}
+
+.user-name{
+    padding:10px;
+    grid-area: photo;
+    transition: transform .4s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.user-name:hover{
+    transform: scale(1.2);
+}
+.secundary-row{
+    height: 100vh;
+    grid-area: secundary-row;
+}
+
+.information{
+    height: 100%;
+    grid-area: information;
+    display: grid;
+    grid-template-areas:    "info1"
+                            "info2"
+                            "info3"
+                            "info4" 
+                            "info5" 
+                            "info6";
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.infoormation-btn1, .infoormation-btn2, .infoormation-btn3, .infoormation-btn4, .infoormation-btn5, .infoormation-btn6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    overflow: hidden;
+    border: 1px #000000 solid;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ov-btn-slide-left {
+    background-color: #f5f5f5; /* color de fondo */
+    color: #000000; /* color de fuente */
+     /* tamaño y color de borde */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .ov-btn-slide-left:hover {
+    color: #f7f7f7; /* color de fuente hover */
+  }
+  .ov-btn-slide-left::after {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    z-index: -1;
+    content: "XD";
+    background-color: #000000; /* color de fondo hover */
+    position: absolute;
+    /* z-index: -1; */
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .ov-btn-slide-left:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+.infoormation-btn1{
+    grid-area: info1;
+    
+}
+.infoormation-btn2{
+    grid-area: info2;
+    
+}
+
+.infoormation-btn3{
+    grid-area: info3;
+    
+}
+
+.infoormation-btn4{
+    grid-area: info4;
+    
+}
+
+.infoormation-btn5{
+    grid-area: info5;
+    
+}
+
+.infoormation-btn6{
+    grid-area: info6;
+    
+}
+
+.hidden{
+    display:hidden;
+}
+
+/* @keyframes slide {
+    from {
+      margin-left:50%;
+      width: 50%
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } */
+
+  .container-text{
+    display: none;
+  }
