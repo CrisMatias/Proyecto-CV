@@ -99,8 +99,8 @@
 
 $('.botnData').click(function() { 
     let listaBotones = $('.botnData');
-    let listaDiv = $('.container-text')
-    $('.container-text').hide('slow')
+    let listaDiv = $('.container-info')
+    $('.container-info').hide('slow')
     $(listaBotones).css('background-color', '')
      $(listaBotones).css('color', '')
     for (let i = 0; i < listaBotones.length ; i++){
