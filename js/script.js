@@ -44,7 +44,6 @@ function pressionar3(){
         contenido3.classList.remove("container-text")
         contenido1.classList.add("container-text")
         contenido2.classList.add("container-text")
-        contenido2.classList.add("container-text")
         contenido4.classList.add('container-text')
         contenido5.classList.add('container-text')
         contenido6.classList.add('container-text')
