@@ -175,11 +175,24 @@
 } 
 
 .container{
-    width: 60%!important;
+    
+    width: 80%!important;
 }
 
-.tittle{
+.data-tittle{
+    width: 100%;
     text-align: center;
+    border-bottom: #000000 solid 3px;
+    margin: 10px 0 30px 0;
+}
+
+.data-info{
+    text-align: center;
+    border:#000000 solid 1px;
+}
+
+.row-hidden{
+    display: none;
 }
 /* .secundary-row{
     width: 100%;

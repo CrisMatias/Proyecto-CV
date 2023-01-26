@@ -112,3 +112,16 @@ $('.botnData').click(function() {
         }
     }
 });
+
+$('.row-hidden').hide('slow')
+$('.row-active').click(function() { 
+    let listaRow = $('.row-active');
+    let listaHidden = $('.row-hidden')
+ 
+    for (let i = 0; i < listaRow.length ; i++){
+        if(listaRow[i].id == $(this).attr('id') ){
+            // console.log(listaDiv[i])
+            $(listaHidden[i]).toggle('slow')
+        }
+    }
+});
