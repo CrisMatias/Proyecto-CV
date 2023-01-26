@@ -20,7 +20,7 @@
     grid-area: primary-row;
     grid-template-areas:    "photo"
                             "information";
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 45% 1fr;
     grid-template-columns: 1fr ;
     align-content: center;
     align-items: center;
