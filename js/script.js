@@ -105,7 +105,6 @@ $('.botnData').click(function() {
      $(listaBotones).css('color', '')
     for (let i = 0; i < listaBotones.length ; i++){
         if(listaBotones[i].id == $(this).attr('id') ){
-            // console.log(listaDiv[i])
             $(listaDiv[i]).show('slow')
             $(listaBotones[i]).css('background-color', '#000000')
             $(listaBotones[i]).css('color', '#ffffff')
@@ -117,10 +116,8 @@ $('.row-hidden').hide('slow')
 $('.row-active').click(function() { 
     let listaRow = $('.row-active');
     let listaHidden = $('.row-hidden')
- 
     for (let i = 0; i < listaRow.length ; i++){
         if(listaRow[i].id == $(this).attr('id') ){
-            // console.log(listaDiv[i])
             $(listaHidden[i]).toggle('slow')
         }
     }
