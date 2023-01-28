@@ -106,8 +106,9 @@ $('.botnData').click(function() {
     for (let i = 0; i < listaBotones.length ; i++){
         if(listaBotones[i].id == $(this).attr('id') ){
             $(listaDiv[i]).show('slow')
-            $(listaBotones[i]).css('background-color', '#000000')
-            $(listaBotones[i]).css('color', '#ffffff')
+            elemento = listaBotones[i]
+            $(elemento).css('background-color', '#4D4637')
+            $(elemento).css('color', '#ffffff')
         }
     }
 });
