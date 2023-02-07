@@ -96,19 +96,20 @@
 //         contenido5.classList.add('container-text')
 //     }
 // }
-
 $('.botnData').click(function() { 
     let listaBotones = $('.botnData');
     let listaDiv = $('.container-info')
-    $('.container-info').hide('slow')
+
     $(listaBotones).css('background-color', '')
-     $(listaBotones).css('color', '')
+    $(listaBotones).css('color', '')
     for (let i = 0; i < listaBotones.length ; i++){
-        if(listaBotones[i].id == $(this).attr('id') ){
+        if(listaBotones[i].id == $(this).attr('id')){
             $(listaDiv[i]).show('slow')
             elemento = listaBotones[i]
             $(elemento).css('background-color', '#4D4637')
             $(elemento).css('color', '#ffffff')
+        }else{
+            $(listaDiv[i]).hide('slow')
         }
     }
 });

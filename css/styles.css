@@ -11,16 +11,6 @@ body{
     background-color: #FAF3DD;
 }
 
-/* .container-total{
-    height: 100vh;
-    display: grid;
-    grid-template-areas:    "primary-row secundary-row";
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr ;
-    overflow: hidden;
-    width: 100vw;
-} */
-
 .information li {
     list-style: none;
     padding: 0px !important;
@@ -262,10 +252,6 @@ body{
 @media screen and (max-width: 992px) {
     #sidebar-menu{
         display: none !important;
-    }
-
-    #content{
-        margin-top: 150px;
     }
 
     .photo{
