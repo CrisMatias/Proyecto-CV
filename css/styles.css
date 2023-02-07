@@ -238,7 +238,7 @@ body{
 }
 
 /* Media query para resoluciones mayores a 992px */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
     #navbar-menu{
         display: none;
         /* background-color: #DED29E!important; */
@@ -249,7 +249,7 @@ body{
 }
 
 /* Media query para resoluciones menores a 992px */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
     #sidebar-menu{
         display: none !important;
     }
