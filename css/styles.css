@@ -169,10 +169,9 @@ body{
     width: 20px!important;
 } 
 
-/* .container{
+.container{
     width: 80%!important;
-} */
-
+}
 
 
 .data-tittle{
@@ -227,15 +226,6 @@ body{
         align-items: center;
         text-align: center;
         justify-content: center;
-    }
-
-    .container-fluid{
-        width: 100vh;
-        padding: 0;
-    }
-    .container-info{
-        padding:0;
-        width: 20px!important;
     }
 }
 
