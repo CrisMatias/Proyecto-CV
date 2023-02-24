@@ -121,7 +121,7 @@ body{
   }
 
 .eduBtnActive {
-    background-color: green;
+    background-color: green !important;
 }
 
 /*** ESTILOS BOTÓN SLIDE TOP ***/
