@@ -10,7 +10,7 @@
     <title>Curriculum Vitae</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid"> <!--Container fluid-->
         <nav id="navbar-menu" class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
               <img src="images/fake-face.jpg" class="photo d-inline-block align-top" alt="">
@@ -51,16 +51,16 @@
                 </div>  <!-- fin Foto de perfil-->
                 <div class="container-information">  <!--Botones-->
                     <button id="btnPersonalInfo" class="botnData align-self-center btn-efect">Datos Personales</button>
-                    <button  id="btnEducation" class="botnData align-self-center btn-efect">Educacion</button>
+                    <button id="btnEducation" class="botnData align-self-center btn-efect">Educacion</button>
                     <button id="btnExperience" class="botnData align-self-center btn-efect">Experiencia Laboral</button>
                     <button id="btnConocimientos" class="botnData align-self-center btn-efect">Conocimientos</button>
-                    <button id="btnObjetives"  class="botnData align-self-center btn-efect">Objetivos</button>
+                    <button id="btnObjetives" class="botnData align-self-center btn-efect">Objetivos</button>
                     <button id="btnAbout" class="botnData align-self-center btn-efect">Sobre Mi</button>
                 </div> <!-- fin Botones-->
             </div> <!--Fin columna izquierda-->
             <div id="content" class="col-lg-9">
                 <div class="row">
-                    <div class="container-info col-12" id="dataPersonalInfo"> <!--Comienza container info-personal-->
+                    <div class="container-info col" id="dataPersonalInfo"> <!--Comienza container info-personal-->
                         <div class="container">
                             <div class="row">
                                 <div class="col">
@@ -75,7 +75,7 @@
                                    <p class="info-parrafo"><b>Estado Civil:</b> Soltero</p>
                                    <p class="info-parrafo"><b>País:</b> Argentina</p>
                                    <p class="info-parrafo"><b>Estado:</b> Tucuman</p>
-                                   <p class="info-parrafo"><b>Ciudad:</b> San Miguel de Tucuman</p>
+                                   <p class="info-parrafo"><b>Ciudad:</b> San Miguel de Tucumán</p>
                                    <p class="info-parrafo"><b>Dirección:</b>Calle Falsa 987</p>
                                    <p class="info-parrafo"><b>Teléfono:</b> 123-456-7890</p>
                                    <p class="info-parrafo"><b>Email:</b> albertbret@email.com</p>
@@ -84,47 +84,44 @@
                         </div> <!--Cierre Container-->
                     </div><!--Cierre container info-personal-->
         
-                    <div class="container-info col-12" id="dataEducation">
+                    <div class="container-info col" id="dataEducation">
                         <div class="container">
                             <div class="row">
                                 <div class="col">
                                     <h2 class="data-tittle">Estudios</h2>
                                 </div>
                             </div>
-                            <div class="row row-active" id="botonPri">
-                                <div class="col">
-                                   <h3 class="data-info">Mail</h3>
+                            <div class="container-sub-info">
+                                <div class="row">
+                                    <div class="col" >
+                                       <h3 class="data-info data-info-button ov-btn-slide-top row-active" id="botonPri1">Escuela Falsa 01</h3>
+                                    </div>
+                                </div>
+                                <div class="row row-hidden" id="botonSec1">
+                                    <div class="col">
+                                        <h4 class="data-info">Titulo Falso</h4>
+                                        <p class="data-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio maiores a accusantium? Laboriosam mollitia, quos corporis ea illum doloribus, necessitatibus fuga ab corrupti deserunt beatae laudantium, culpa neque possimus?</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col" >
+                                       <h3 class="data-info data-info-button ov-btn-slide-top row-active" id="botonPri2">Escuela Falsa 01</h3>
+                                    </div>
+                                </div>
+                                <div class="row row-hidden" id="botonSec2">
+                                    <div class="col">
+                                        <h4 class="data-info">Titulo Falso</h4>
+                                        <p class="data-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio maiores a accusantium? Laboriosam mollitia, quos corporis ea illum doloribus, necessitatibus fuga ab corrupti deserunt beatae laudantium, culpa neque possimus?</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row row-hidden" id="botonXD1">
-                                <div class="col">
-                                   <h3 class="data-info">Mail Oculto</h3>
-                                </div>
-                            </div>
-                            <div class="row row-active" id="botonSec">
-                                <div class="col">
-                                   <h3 class="data-info">Mail</h3>
-                                </div>
-                            </div>
-                            <div class="row row-hidden" id="botonXD2">
-                                <div class="col">
-                                   <h3 class="data-info">Mai lOculto</h3>
-                                </div>
-                            </div>
-                            <div class="row row-active" id="botonTer">
-                                <div class="col">
-                                   <h3 class="data-info">Mail</h3>
-                                </div>
-                            </div>
-                            <div class="row row-hidden" id="botonXD3">
-                                <div class="col">
-                                   <h3 class="data-info">Mai lOculto</h3>
-                                </div>
-                            </div>
+
                         </div> <!--Cierre Container bootstrap-->
                     </div> 
         
-                    <div class="container-info col-12" id="dataExperience">
+                    <div class="container-info col" id="dataExperience">
                         <div class="container">
                             <div class="row">
                                 <div class="col">
@@ -148,7 +145,7 @@
                         </div> <!--Cierre Container-->
                     </div>
         
-                    <div class="container-info col-12" id="dataConocimientos">
+                    <div class="container-info col" id="dataConocimientos">
                         <div class="container">
                             <div class="row">
                                 <div class="col">
@@ -171,7 +168,7 @@
                           </div> <!--Cierre Container bootstrap-->
                         </div> <!--Cierre Container-->
                     </div>
-                    <div class="container-info col-12" id="dataObjetives">
+                    <div class="container-info col" id="dataObjetives">
                         <div class="container">
                             <div class="row">
                                 <div class="col">
@@ -194,7 +191,7 @@
                           </div> <!--Cierre Container bootstrap-->
                         </div> <!--Cierre Container-->
                     </div>
-                    <div class="container-info col-12" id="dataAbout">
+                    <div class="container-info col" id="dataAbout">
                         <div class="container">
                             <div class="row">
                                 <div class="col">
@@ -203,16 +200,24 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                   <p class="info-parrafo"><b>Nombre Completo:</b> Brett Albert Sutton</p>
-                                   <p class="info-parrafo"><b>Fecha de Nacimiento:</b> 12/06/1990</p>
-                                   <p class="info-parrafo"><b>Edad:</b> 40 años</p>
-                                   <p class="info-parrafo"><b>Estado Civil:</b> Soltera</p>
-                                   <p class="info-parrafo"><b>País:</b> Estados Unidos</p>
-                                   <p class="info-parrafo"><b>Estado:</b> California</p>
-                                   <p class="info-parrafo"><b>Ciudad:</b> San Francisco</p>
-                                   <p class="info-parrafo"><b>Dirección:</b>Fake Street 987</p>
-                                   <p class="info-parrafo"><b>Teléfono:</b> 123-456-7890</p>
-                                   <p class="info-parrafo"><b>Email:</b> albertbret@email.com</p>
+                                   <p class="info-parrafo"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod sapien dui, vel vestibulum nisl pulvinar placerat. Aliquam in egestas metus. Suspendisse diam diam, ullamcorper vitae mauris sit amet, vulputate iaculis massa. In venenatis erat ac odio luctus aliquet. Aenean egestas erat leo, sed vulputate tellus blandit id. In tincidunt cursus tortor, eu semper ipsum finibus id. Morbi id nisl nulla. Vivamus tellus dolor, volutpat nec lacinia ac, fringilla ac dui. Vivamus sit amet erat pharetra, pretium tortor at, vehicula lacus. Curabitur sit amet felis non nunc accumsan dignissim nec sit amet nunc. Nunc vitae felis ipsum. Quisque ullamcorper id justo ut elementum. Fusce finibus diam quis nunc blandit ultrices. Mauris sit amet magna urna.
+
+                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu arcu cursus, egestas ipsum a, aliquet sem. Curabitur fringilla elit a tincidunt bibendum. Donec sit amet massa lorem. Aenean a nisi facilisis, posuere elit et, eleifend leo. Donec leo risus, fermentum at arcu in, eleifend pellentesque eros. Phasellus eu sem molestie, posuere felis sit amet, consequat diam. Mauris ac eros diam. Curabitur volutpat felis vitae nisi semper, eu finibus leo bibendum. Sed venenatis lobortis consequat. Nullam non ultricies urna. Nam sagittis lorem lacus, eget fermentum magna pellentesque vitae.
+                                    
+                                    Praesent suscipit leo interdum augue feugiat, sed rhoncus neque sodales. Nam tempus volutpat consectetur. Quisque non porttitor erat. In blandit semper leo ut mattis. Phasellus eget mauris dictum, congue elit in, cursus erat. Pellentesque vestibulum quis justo quis semper. Aenean dictum, est id tristique rutrum, sapien mi scelerisque tellus, nec lacinia dolor felis sit amet ante. Vestibulum lacus nulla, vehicula ornare fringilla sit amet, sollicitudin tempus nisl. Phasellus vel commodo nisi. Ut interdum erat non tortor tempus posuere. Vestibulum ut condimentum felis. Fusce sed tristique nunc. Phasellus nec enim mi. Suspendisse feugiat bibendum placerat. Sed volutpat rutrum dignissim. Sed imperdiet porttitor lacus.
+                                    
+                                    Vivamus consequat quam lorem, vel consectetur odio consectetur non. Aliquam non nunc nibh. Vivamus feugiat sem eu ullamcorper sollicitudin. Curabitur malesuada est eu enim gravida feugiat. Aliquam a lobortis justo. Duis tristique consequat nisi nec congue. Vestibulum enim lacus, finibus eu posuere eu, consequat et eros. Curabitur eget tincidunt arcu. Nulla fringilla interdum risus sed ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                    
+                                    In vel aliquam metus, a sodales justo. Cras pharetra justo ac ex porta, ut efficitur ligula dapibus. Nunc egestas dolor vitae gravida laoreet. Aenean viverra, diam in aliquam elementum, lorem ligula pretium leo, eget finibus metus lectus sed orci. Cras a risus tempor, ullamcorper ex quis, tempor velit. Vivamus ut sem faucibus, sollicitudin tellus a, tincidunt turpis. Nam maximus venenatis bibendum. Sed vitae dapibus enim. Pellentesque nisi risus, convallis sit amet condimentum id, ultricies eget neque. Mauris sit amet mauris in sem euismod dictum sed eu ex. Fusce interdum efficitur eros non volutpat. Nunc dictum mauris et massa convallis, vel faucibus massa vulputate. Sed eu gravida nisi. Maecenas dictum ipsum metus, vitae porttitor dolor volutpat consequat. Phasellus commodo pulvinar porta. Suspendisse ac tincidunt mi.</p>
+                                   <p class="info-parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod sapien dui, vel vestibulum nisl pulvinar placerat. Aliquam in egestas metus. Suspendisse diam diam, ullamcorper vitae mauris sit amet, vulputate iaculis massa. In venenatis erat ac odio luctus aliquet. Aenean egestas erat leo, sed vulputate tellus blandit id. In tincidunt cursus tortor, eu semper ipsum finibus id. Morbi id nisl nulla. Vivamus tellus dolor, volutpat nec lacinia ac, fringilla ac dui. Vivamus sit amet erat pharetra, pretium tortor at, vehicula lacus. Curabitur sit amet felis non nunc accumsan dignissim nec sit amet nunc. Nunc vitae felis ipsum. Quisque ullamcorper id justo ut elementum. Fusce finibus diam quis nunc blandit ultrices. Mauris sit amet magna urna.
+
+                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu arcu cursus, egestas ipsum a, aliquet sem. Curabitur fringilla elit a tincidunt bibendum. Donec sit amet massa lorem. Aenean a nisi facilisis, posuere elit et, eleifend leo. Donec leo risus, fermentum at arcu in, eleifend pellentesque eros. Phasellus eu sem molestie, posuere felis sit amet, consequat diam. Mauris ac eros diam. Curabitur volutpat felis vitae nisi semper, eu finibus leo bibendum. Sed venenatis lobortis consequat. Nullam non ultricies urna. Nam sagittis lorem lacus, eget fermentum magna pellentesque vitae.
+                                    
+                                    Praesent suscipit leo interdum augue feugiat, sed rhoncus neque sodales. Nam tempus volutpat consectetur. Quisque non porttitor erat. In blandit semper leo ut mattis. Phasellus eget mauris dictum, congue elit in, cursus erat. Pellentesque vestibulum quis justo quis semper. Aenean dictum, est id tristique rutrum, sapien mi scelerisque tellus, nec lacinia dolor felis sit amet ante. Vestibulum lacus nulla, vehicula ornare fringilla sit amet, sollicitudin tempus nisl. Phasellus vel commodo nisi. Ut interdum erat non tortor tempus posuere. Vestibulum ut condimentum felis. Fusce sed tristique nunc. Phasellus nec enim mi. Suspendisse feugiat bibendum placerat. Sed volutpat rutrum dignissim. Sed imperdiet porttitor lacus.
+                                    
+                                    Vivamus consequat quam lorem, vel consectetur odio consectetur non. Aliquam non nunc nibh. Vivamus feugiat sem eu ullamcorper sollicitudin. Curabitur malesuada est eu enim gravida feugiat. Aliquam a lobortis justo. Duis tristique consequat nisi nec congue. Vestibulum enim lacus, finibus eu posuere eu, consequat et eros. Curabitur eget tincidunt arcu. Nulla fringilla interdum risus sed ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                    
+                                    In vel aliquam metus, a sodales justo. Cras pharetra justo ac ex porta, ut efficitur ligula dapibus. Nunc egestas dolor vitae gravida laoreet. Aenean viverra, diam in aliquam elementum, lorem ligula pretium leo, eget finibus metus lectus sed orci. Cras a risus tempor, ullamcorper ex quis, tempor velit. Vivamus ut sem faucibus, sollicitudin tellus a, tincidunt turpis. Nam maximus venenatis bibendum. Sed vitae dapibus enim. Pellentesque nisi risus, convallis sit amet condimentum id, ultricies eget neque. Mauris sit amet mauris in sem euismod dictum sed eu ex. Fusce interdum efficitur eros non volutpat. Nunc dictum mauris et massa convallis, vel faucibus massa vulputate. Sed eu gravida nisi. Maecenas dictum ipsum metus, vitae porttitor dolor volutpat consequat. Phasellus commodo pulvinar porta. Suspendisse ac tincidunt mi.</p>
                                 </div>
                           </div> <!--Cierre Container bootstrap-->
                         </div> <!--Cierre Container-->
@@ -220,9 +225,7 @@
                 </div>
             </div>
         </div>
-        
-
-    </div>
+    </div> <!--Container fluid-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/5be496a49d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

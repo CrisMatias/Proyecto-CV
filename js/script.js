@@ -99,7 +99,6 @@
 $('.botnData').click(function() { 
     let listaBotones = $('.botnData');
     let listaDiv = $('.container-info')
-
     $(listaBotones).css('background-color', '')
     $(listaBotones).css('color', '')
     for (let i = 0; i < listaBotones.length ; i++){
@@ -121,6 +120,9 @@ $('.row-active').click(function() {
     for (let i = 0; i < listaRow.length ; i++){
         if(listaRow[i].id == $(this).attr('id') ){
             $(listaHidden[i]).toggle('slow')
+            colores = listaRow[i]
+            $(colores).css('background-color', '#4D4637')
         }
     }
+    
 });
