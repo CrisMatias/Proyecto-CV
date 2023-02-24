@@ -21,7 +21,7 @@ $('.row-active').click(function() {
     let listaHidden = $('.row-hidden')
     for (let i = 0; i < listaRow.length ; i++){
         if(listaRow[i].id == $(this).attr('id') ){
-            $(listaHidden[i]).toggleClass('slow')
+            $(listaHidden[i]).toggle('slow')
             colores = listaRow[i]
             $(colores).toogleClass('eduBtnActive');
 //          $(colores).css('background-color', '#4D4637')
