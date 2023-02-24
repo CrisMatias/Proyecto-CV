@@ -121,7 +121,12 @@ $('.row-active').click(function() {
         if(listaRow[i].id == $(this).attr('id') ){
             $(listaHidden[i]).toggle('slow')
             colores = listaRow[i]
-            $(colores).css('background-color', '#4D4637')
+            $(colores).addClass('eduBtnActive');
+//          $(colores).css('background-color', '#4D4637')
+        }
+        else {
+          colores = listaRow[i];
+          $(colores).removeClass('eduBtnActive');
         }
     }
     
