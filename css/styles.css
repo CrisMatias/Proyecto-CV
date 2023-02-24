@@ -120,6 +120,9 @@ body{
     transition: all 0.35s;
   }
 
+.eduBtnActive {
+    backgroud-color: green;
+}
 
 /*** ESTILOS BOTÓN SLIDE TOP ***/
 .ov-btn-slide-top {
