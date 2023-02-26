@@ -15,16 +15,15 @@ $('.botnData').click(function() {
     }
 });
 
-$('.row-hidden').hide('slow')
-$('.row-active').click(function() { 
-    let listaRow = $('.row-active');
-    let listaHidden = $('.row-hidden')
+$('.inactive-btn').hide('slow')
+$('.active-btn').click(function() { 
+    let listaRow = $('.active-btn');
+    let listaHidden = $('.inactive-btn')
     for (let i = 0; i < listaRow.length ; i++){
         if(listaRow[i].id == $(this).attr('id') ){
             $(listaHidden[i]).toggle('slow')
             colores = listaRow[i]
             $(colores).toggleClass('eduBtnActive');
-//          $(colores).css('background-color', '#4D4637')
         }
     }
     

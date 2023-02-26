@@ -11,10 +11,11 @@
 </head>
 <body>
     <div class="container-fluid"> <!--Container fluid-->
-        <nav id="navbar-menu" class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav id="navbar-menu" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <a class="navbar-brand" href="#">
               <img src="images/fake-face.jpg" class="photo d-inline-block align-top" alt="">
             </a>
+            <h3>Brett Albert Sutton</h3>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -61,166 +62,138 @@
             <div id="content" class="col-lg-9">
                 <div class="row">
                     <div class="container-info col-12" id="dataPersonalInfo"> <!--Comienza container info-personal-->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <h2 class="data-tittle">Datos Personales</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                   <p class="info-parrafo"><b>Nombre Completo:</b> Brett Albert Sutton</p>
-                                   <p class="info-parrafo"><b>Fecha de Nacimiento:</b> 12/06/1990</p>
-                                   <p class="info-parrafo"><b>Edad:</b> 40 años</p>
-                                   <p class="info-parrafo"><b>Estado Civil:</b> Soltera</p>
-                                   <p class="info-parrafo"><b>País:</b> Estados Unidos</p>
-                                   <p class="info-parrafo"><b>Estado:</b> California</p>
-                                   <p class="info-parrafo"><b>Ciudad:</b> San Francisco</p>
-                                   <p class="info-parrafo"><b>Dirección:</b>Fake Street 987</p>
-                                   <p class="info-parrafo"><b>Teléfono:</b> 123-456-7890</p>
-                                   <p class="info-parrafo"><b>Email:</b> albertbret@email.com</p>
-                                </div>
-                          </div> <!--Cierre Container bootstrap-->
-                        </div> <!--Cierre Container-->
+                        <div class="sticky-tittle">
+                            <h2 class="data-tittle">Datos Personales</h2>
+                        </div>
+                        <li class="lista-info">
+                            <ul class="info-parrafo"><b>Nombre Completo:</b> Brett Albert Sutton</ul>
+                            <ul class="info-parrafo"><b>Fecha de Nacimiento:</b> 12/06/1990</ul>
+                            <ul class="info-parrafo"><b>Edad:</b> 40 años</ul>
+                            <ul class="info-parrafo"><b>Estado Civil:</b> Soltera</ul>
+                            <ul class="info-parrafo"><b>País:</b> Estados Unidos</ul>
+                            <ul class="info-parrafo"><b>Estado:</b> California</ul>
+                            <ul class="info-parrafo"><b>Ciudad:</b> San Francisco</ul>
+                            <ul class="info-parrafo"><b>Dirección:</b>Fake Street 987</ul>
+                            <ul class="info-parrafo"><b>Teléfono:</b> 123-456-7890</ul>
+                            <ul class="info-parrafo"><b>Email:</b> albertbret@email.com</ul>
+                         </li>
                     </div><!--Cierre container info-personal-->
         
                     <div class="container-info col-12" id="dataEducation">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <h2 class="data-tittle">Estudios</h2>
+                        <div class="sticky-tittle">
+                            <h2 class="data-tittle">Estudios</h2>
+                        </div>
+                        <div class="container-sub-info">
+                            <div class="sub-container-info">
+                                <div class="active-btn ov-btn-slide-top" id="botonPri1">
+                                    <h3 class="data-info data-info-button">Titulo Falso 1</h3>
                                 </div>
-                            </div>
-                            <div class="container-sub-info">
-                                <div class="row">
-                                    <div class="col" >
-                                       <h3 class="data-info data-info-button ov-btn-slide-top row-active" id="botonPri1">Escuela Falsa 01</h3>
-                                    </div>
-                                </div>
-                                <div class="row row-hidden" id="botonSec1">
-                                    <div class="col">
-                                        <h4 class="data-info">Titulo Falso</h4>
-                                        <p class="data-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio maiores a accusantium? Laboriosam mollitia, quos corporis ea illum doloribus, necessitatibus fuga ab corrupti deserunt beatae laudantium, culpa neque possimus?</p>
-                                    </div>
-                                </div>
-
-
-                                <div class="row">
-                                    <div class="col" >
-                                       <h3 class="data-info data-info-button ov-btn-slide-top row-active" id="botonPri2">Escuela Falsa 01</h3>
-                                    </div>
-                                </div>
-                                <div class="row row-hidden" id="botonSec2">
-                                    <div class="col">
-                                        <h4 class="data-info">Titulo Falso</h4>
-                                        <p class="data-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio maiores a accusantium? Laboriosam mollitia, quos corporis ea illum doloribus, necessitatibus fuga ab corrupti deserunt beatae laudantium, culpa neque possimus?</p>
-                                    </div>
+                                <div class="inactive-btn"  id="botonSec1">
+                                    <h4 class="data-subtittle">Institución Educativa Lorem Ipsum 1</h4>
+                                    <p class="info-subparrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio maiores a accusantium? Laboriosam mollitia, quos corporis ea illum doloribus, necessitatibus fuga ab corrupti deserunt beatae laudantium, culpa neque possimus?</p>
                                 </div>
                             </div>
 
-                        </div> <!--Cierre Container bootstrap-->
+                            <div class="sub-container-info">
+                                <div class="active-btn ov-btn-slide-top" id="botonPri2">
+                                    <h3 class="data-info data-info-button">Titulo Falso 2</h3>
+                                </div>
+                                <div class="inactive-btn"  id="botonSec2">
+                                    <h4 class="data-subtittle">Institución Educativa Lorem Ipsum 2</h4>
+                                    <p class="info-subparrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio maiores a accusantium? Laboriosam mollitia, quos corporis ea illum doloribus, necessitatibus fuga ab corrupti deserunt beatae laudantium, culpa neque possimus?</p>
+                                </div>
+                            </div>
+
+                            <div class="sub-container-info">
+                                <div class="active-btn ov-btn-slide-top" id="botonPri3">
+                                    <h3 class="data-info data-info-button">Titulo Falso 3</h3>
+                                </div>
+                                <div class="inactive-btn"  id="botonSec3">
+                                    <h4 class="data-subtittle">Institución Educativa Lorem Ipsum 3</h4>
+                                    <p class="info-subparrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio maiores a accusantium? Laboriosam mollitia, quos corporis ea illum doloribus, necessitatibus fuga ab corrupti deserunt beatae laudantium, culpa neque possimus?</p>
+                                </div>
+                            </div>
+
+                            <div class="sub-container-info">
+                                <div class="active-btn ov-btn-slide-top" id="botonPri4">
+                                    <h3 class="data-info data-info-button">Titulo Falso 4</h3>
+                                </div>
+                                <div class="inactive-btn"  id="botonSec4">
+                                    <h4 class="data-subtittle">Institución Educativa Lorem Ipsum 4</h4>
+                                    <p class="info-subparrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio maiores a accusantium? Laboriosam mollitia, quos corporis ea illum doloribus, necessitatibus fuga ab corrupti deserunt beatae laudantium, culpa neque possimus?</p>
+                                </div>
+                            </div>
+                        </div>
                     </div> 
         
                     <div class="container-info col-12" id="dataExperience">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <h2 class="data-tittle">Datos Personales</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                   <p class="info-parrafo"><b>Nombre Completo:</b> Brett Albert Sutton</p>
-                                   <p class="info-parrafo"><b>Fecha de Nacimiento:</b> 12/06/1990</p>
-                                   <p class="info-parrafo"><b>Edad:</b> 40 años</p>
-                                   <p class="info-parrafo"><b>Estado Civil:</b> Soltera</p>
-                                   <p class="info-parrafo"><b>País:</b> Estados Unidos</p>
-                                   <p class="info-parrafo"><b>Estado:</b> California</p>
-                                   <p class="info-parrafo"><b>Ciudad:</b> San Francisco</p>
-                                   <p class="info-parrafo"><b>Dirección:</b>Fake Street 987</p>
-                                   <p class="info-parrafo"><b>Teléfono:</b> 123-456-7890</p>
-                                   <p class="info-parrafo"><b>Email:</b> albertbret@email.com</p>
-                                </div>
-                          </div> <!--Cierre Container bootstrap-->
-                        </div> <!--Cierre Container-->
+                        <div class="sticky-tittle">
+                            <h2 class="data-tittle">Experiencia Laboral</h2>
+                        </div>
+                        <div class="laboral-xp">
+                            <h4 class="data-subtittle">Trabajo Falso 01</h4>
+                            <p class="info-subparrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio maiores a accusantium? Laboriosam mollitia, quos corporis ea illum doloribus, necessitatibus fuga ab corrupti deserunt beatae laudantium, culpa neque possimus?</p>
+                        </div>
                     </div>
         
                     <div class="container-info col-12" id="dataConocimientos">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <h2 class="data-tittle">Datos Personales</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                   <p class="info-parrafo"><b>Nombre Completo:</b> Brett Albert Sutton</p>
-                                   <p class="info-parrafo"><b>Fecha de Nacimiento:</b> 12/06/1990</p>
-                                   <p class="info-parrafo"><b>Edad:</b> 40 años</p>
-                                   <p class="info-parrafo"><b>Estado Civil:</b> Soltera</p>
-                                   <p class="info-parrafo"><b>País:</b> Estados Unidos</p>
-                                   <p class="info-parrafo"><b>Estado:</b> California</p>
-                                   <p class="info-parrafo"><b>Ciudad:</b> San Francisco</p>
-                                   <p class="info-parrafo"><b>Dirección:</b>Fake Street 987</p>
-                                   <p class="info-parrafo"><b>Teléfono:</b> 123-456-7890</p>
-                                   <p class="info-parrafo"><b>Email:</b> albertbret@email.com</p>
-                                </div>
-                          </div> <!--Cierre Container bootstrap-->
-                        </div> <!--Cierre Container-->
+                        <div class="sticky-tittle">
+                            <h2 class="data-tittle">Conocimientos</h2>
+                        </div>
+                        
+                        <p class="info-parrafo"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod sapien dui, vel vestibulum nisl pulvinar placerat. Aliquam in egestas metus. Suspendisse diam diam, ullamcorper vitae mauris sit amet, vulputate iaculis massa. In venenatis erat ac odio luctus aliquet. Aenean egestas erat leo, sed vulputate tellus blandit id. In tincidunt cursus tortor, eu semper ipsum finibus id. Morbi id nisl nulla. Vivamus tellus dolor, volutpat nec lacinia ac, fringilla ac dui. Vivamus sit amet erat pharetra, pretium tortor at, vehicula lacus. Curabitur sit amet felis non nunc accumsan dignissim nec sit amet nunc. Nunc vitae felis ipsum. Quisque ullamcorper id justo ut elementum. Fusce finibus diam quis nunc blandit ultrices. Mauris sit amet magna urna.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu arcu cursus, egestas ipsum a, aliquet sem. Curabitur fringilla elit a tincidunt bibendum. Donec sit amet massa lorem. Aenean a nisi facilisis, posuere elit et, eleifend leo. Donec leo risus, fermentum at arcu in, eleifend pellentesque eros. Phasellus eu sem molestie, posuere felis sit amet, consequat diam. Mauris ac eros diam. Curabitur volutpat felis vitae nisi semper, eu finibus leo bibendum. Sed venenatis lobortis consequat. Nullam non ultricies urna. Nam sagittis lorem lacus, eget fermentum magna pellentesque vitae.                  
+                            Praesent suscipit leo interdum augue feugiat, sed rhoncus neque sodales. Nam tempus volutpat consectetur. Quisque non porttitor erat. In blandit semper leo ut mattis. Phasellus eget mauris dictum, congue elit in, cursus erat. Pellentesque vestibulum quis justo quis semper. Aenean dictum, est id tristique rutrum, sapien mi scelerisque tellus, nec lacinia dolor felis sit amet ante. Vestibulum lacus nulla, vehicula ornare fringilla sit amet, sollicitudin tempus nisl. Phasellus vel commodo nisi. Ut interdum erat non tortor tempus posuere. Vestibulum ut condimentum felis. Fusce sed tristique nunc. Phasellus nec enim mi. Suspendisse feugiat bibendum placerat. Sed volutpat rutrum dignissim. Sed imperdiet porttitor lacus.         
+                            Vivamus consequat quam lorem, vel consectetur odio consectetur non. Aliquam non nunc nibh. Vivamus feugiat sem eu ullamcorper sollicitudin. Curabitur malesuada est eu enim gravida feugiat. Aliquam a lobortis justo. Duis tristique consequat nisi nec congue. Vestibulum enim lacus, finibus eu posuere eu, consequat et eros. Curabitur eget tincidunt arcu. Nulla fringilla interdum risus sed ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.       
+                            In vel aliquam metus, a sodales justo. Cras pharetra justo ac ex porta, ut efficitur ligula dapibus. Nunc egestas dolor vitae gravida laoreet. Aenean viverra, diam in aliquam elementum, lorem ligula pretium leo, eget finibus metus lectus sed orci. Cras a risus tempor, ullamcorper ex quis, tempor velit. Vivamus ut sem faucibus, sollicitudin tellus a, tincidunt turpis. Nam maximus venenatis bibendum. Sed vitae dapibus enim. Pellentesque nisi risus, convallis sit amet condimentum id, ultricies eget neque. Mauris sit amet mauris in sem euismod dictum sed eu ex. Fusce interdum efficitur eros non volutpat. Nunc dictum mauris et massa convallis, vel faucibus massa vulputate. Sed eu gravida nisi. Maecenas dictum ipsum metus, vitae porttitor dolor volutpat consequat. Phasellus commodo pulvinar porta. Suspendisse ac tincidunt mi.
+                        </p>
+
+                        <p class="info-parrafo"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod sapien dui, vel vestibulum nisl pulvinar placerat. Aliquam in egestas metus. Suspendisse diam diam, ullamcorper vitae mauris sit amet, vulputate iaculis massa. In venenatis erat ac odio luctus aliquet. Aenean egestas erat leo, sed vulputate tellus blandit id. In tincidunt cursus tortor, eu semper ipsum finibus id. Morbi id nisl nulla. Vivamus tellus dolor, volutpat nec lacinia ac, fringilla ac dui. Vivamus sit amet erat pharetra, pretium tortor at, vehicula lacus. Curabitur sit amet felis non nunc accumsan dignissim nec sit amet nunc. Nunc vitae felis ipsum. Quisque ullamcorper id justo ut elementum. Fusce finibus diam quis nunc blandit ultrices. Mauris sit amet magna urna.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu arcu cursus, egestas ipsum a, aliquet sem. Curabitur fringilla elit a tincidunt bibendum. Donec sit amet massa lorem. Aenean a nisi facilisis, posuere elit et, eleifend leo. Donec leo risus, fermentum at arcu in, eleifend pellentesque eros. Phasellus eu sem molestie, posuere felis sit amet, consequat diam. Mauris ac eros diam. Curabitur volutpat felis vitae nisi semper, eu finibus leo bibendum. Sed venenatis lobortis consequat. Nullam non ultricies urna. Nam sagittis lorem lacus, eget fermentum magna pellentesque vitae.                  
+                            Praesent suscipit leo interdum augue feugiat, sed rhoncus neque sodales. Nam tempus volutpat consectetur. Quisque non porttitor erat. In blandit semper leo ut mattis. Phasellus eget mauris dictum, congue elit in, cursus erat. Pellentesque vestibulum quis justo quis semper. Aenean dictum, est id tristique rutrum, sapien mi scelerisque tellus, nec lacinia dolor felis sit amet ante. Vestibulum lacus nulla, vehicula ornare fringilla sit amet, sollicitudin tempus nisl. Phasellus vel commodo nisi. Ut interdum erat non tortor tempus posuere. Vestibulum ut condimentum felis. Fusce sed tristique nunc. Phasellus nec enim mi. Suspendisse feugiat bibendum placerat. Sed volutpat rutrum dignissim. Sed imperdiet porttitor lacus.         
+                            Vivamus consequat quam lorem, vel consectetur odio consectetur non. Aliquam non nunc nibh. Vivamus feugiat sem eu ullamcorper sollicitudin. Curabitur malesuada est eu enim gravida feugiat. Aliquam a lobortis justo. Duis tristique consequat nisi nec congue. Vestibulum enim lacus, finibus eu posuere eu, consequat et eros. Curabitur eget tincidunt arcu. Nulla fringilla interdum risus sed ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.       
+                            In vel aliquam metus, a sodales justo. Cras pharetra justo ac ex porta, ut efficitur ligula dapibus. Nunc egestas dolor vitae gravida laoreet. Aenean viverra, diam in aliquam elementum, lorem ligula pretium leo, eget finibus metus lectus sed orci. Cras a risus tempor, ullamcorper ex quis, tempor velit. Vivamus ut sem faucibus, sollicitudin tellus a, tincidunt turpis. Nam maximus venenatis bibendum. Sed vitae dapibus enim. Pellentesque nisi risus, convallis sit amet condimentum id, ultricies eget neque. Mauris sit amet mauris in sem euismod dictum sed eu ex. Fusce interdum efficitur eros non volutpat. Nunc dictum mauris et massa convallis, vel faucibus massa vulputate. Sed eu gravida nisi. Maecenas dictum ipsum metus, vitae porttitor dolor volutpat consequat. Phasellus commodo pulvinar porta. Suspendisse ac tincidunt mi.
+                        </p>
                     </div>
+
                     <div class="container-info col-12" id="dataObjetives">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <h2 class="data-tittle">Datos Personales</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                   <p class="info-parrafo"><b>Nombre Completo:</b> Brett Albert Sutton</p>
-                                   <p class="info-parrafo"><b>Fecha de Nacimiento:</b> 12/06/1990</p>
-                                   <p class="info-parrafo"><b>Edad:</b> 40 años</p>
-                                   <p class="info-parrafo"><b>Estado Civil:</b> Soltera</p>
-                                   <p class="info-parrafo"><b>País:</b> Estados Unidos</p>
-                                   <p class="info-parrafo"><b>Estado:</b> California</p>
-                                   <p class="info-parrafo"><b>Ciudad:</b> San Francisco</p>
-                                   <p class="info-parrafo"><b>Dirección:</b>Fake Street 987</p>
-                                   <p class="info-parrafo"><b>Teléfono:</b> 123-456-7890</p>
-                                   <p class="info-parrafo"><b>Email:</b> albertbret@email.com</p>
-                                </div>
-                          </div> <!--Cierre Container bootstrap-->
-                        </div> <!--Cierre Container-->
+                        <div class="sticky-tittle">
+                            <h2 class="data-tittle">Objetivos</h2>
+                        </div>
+                        
+                        <p class="info-parrafo"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod sapien dui, vel vestibulum nisl pulvinar placerat. Aliquam in egestas metus. Suspendisse diam diam, ullamcorper vitae mauris sit amet, vulputate iaculis massa. In venenatis erat ac odio luctus aliquet. Aenean egestas erat leo, sed vulputate tellus blandit id. In tincidunt cursus tortor, eu semper ipsum finibus id. Morbi id nisl nulla. Vivamus tellus dolor, volutpat nec lacinia ac, fringilla ac dui. Vivamus sit amet erat pharetra, pretium tortor at, vehicula lacus. Curabitur sit amet felis non nunc accumsan dignissim nec sit amet nunc. Nunc vitae felis ipsum. Quisque ullamcorper id justo ut elementum. Fusce finibus diam quis nunc blandit ultrices. Mauris sit amet magna urna.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu arcu cursus, egestas ipsum a, aliquet sem. Curabitur fringilla elit a tincidunt bibendum. Donec sit amet massa lorem. Aenean a nisi facilisis, posuere elit et, eleifend leo. Donec leo risus, fermentum at arcu in, eleifend pellentesque eros. Phasellus eu sem molestie, posuere felis sit amet, consequat diam. Mauris ac eros diam. Curabitur volutpat felis vitae nisi semper, eu finibus leo bibendum. Sed venenatis lobortis consequat. Nullam non ultricies urna. Nam sagittis lorem lacus, eget fermentum magna pellentesque vitae.                  
+                            Praesent suscipit leo interdum augue feugiat, sed rhoncus neque sodales. Nam tempus volutpat consectetur. Quisque non porttitor erat. In blandit semper leo ut mattis. Phasellus eget mauris dictum, congue elit in, cursus erat. Pellentesque vestibulum quis justo quis semper. Aenean dictum, est id tristique rutrum, sapien mi scelerisque tellus, nec lacinia dolor felis sit amet ante. Vestibulum lacus nulla, vehicula ornare fringilla sit amet, sollicitudin tempus nisl. Phasellus vel commodo nisi. Ut interdum erat non tortor tempus posuere. Vestibulum ut condimentum felis. Fusce sed tristique nunc. Phasellus nec enim mi. Suspendisse feugiat bibendum placerat. Sed volutpat rutrum dignissim. Sed imperdiet porttitor lacus.         
+                            Vivamus consequat quam lorem, vel consectetur odio consectetur non. Aliquam non nunc nibh. Vivamus feugiat sem eu ullamcorper sollicitudin. Curabitur malesuada est eu enim gravida feugiat. Aliquam a lobortis justo. Duis tristique consequat nisi nec congue. Vestibulum enim lacus, finibus eu posuere eu, consequat et eros. Curabitur eget tincidunt arcu. Nulla fringilla interdum risus sed ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.       
+                            In vel aliquam metus, a sodales justo. Cras pharetra justo ac ex porta, ut efficitur ligula dapibus. Nunc egestas dolor vitae gravida laoreet. Aenean viverra, diam in aliquam elementum, lorem ligula pretium leo, eget finibus metus lectus sed orci. Cras a risus tempor, ullamcorper ex quis, tempor velit. Vivamus ut sem faucibus, sollicitudin tellus a, tincidunt turpis. Nam maximus venenatis bibendum. Sed vitae dapibus enim. Pellentesque nisi risus, convallis sit amet condimentum id, ultricies eget neque. Mauris sit amet mauris in sem euismod dictum sed eu ex. Fusce interdum efficitur eros non volutpat. Nunc dictum mauris et massa convallis, vel faucibus massa vulputate. Sed eu gravida nisi. Maecenas dictum ipsum metus, vitae porttitor dolor volutpat consequat. Phasellus commodo pulvinar porta. Suspendisse ac tincidunt mi.
+                        </p>
+
+                        <p class="info-parrafo"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod sapien dui, vel vestibulum nisl pulvinar placerat. Aliquam in egestas metus. Suspendisse diam diam, ullamcorper vitae mauris sit amet, vulputate iaculis massa. In venenatis erat ac odio luctus aliquet. Aenean egestas erat leo, sed vulputate tellus blandit id. In tincidunt cursus tortor, eu semper ipsum finibus id. Morbi id nisl nulla. Vivamus tellus dolor, volutpat nec lacinia ac, fringilla ac dui. Vivamus sit amet erat pharetra, pretium tortor at, vehicula lacus. Curabitur sit amet felis non nunc accumsan dignissim nec sit amet nunc. Nunc vitae felis ipsum. Quisque ullamcorper id justo ut elementum. Fusce finibus diam quis nunc blandit ultrices. Mauris sit amet magna urna.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu arcu cursus, egestas ipsum a, aliquet sem. Curabitur fringilla elit a tincidunt bibendum. Donec sit amet massa lorem. Aenean a nisi facilisis, posuere elit et, eleifend leo. Donec leo risus, fermentum at arcu in, eleifend pellentesque eros. Phasellus eu sem molestie, posuere felis sit amet, consequat diam. Mauris ac eros diam. Curabitur volutpat felis vitae nisi semper, eu finibus leo bibendum. Sed venenatis lobortis consequat. Nullam non ultricies urna. Nam sagittis lorem lacus, eget fermentum magna pellentesque vitae.                  
+                            Praesent suscipit leo interdum augue feugiat, sed rhoncus neque sodales. Nam tempus volutpat consectetur. Quisque non porttitor erat. In blandit semper leo ut mattis. Phasellus eget mauris dictum, congue elit in, cursus erat. Pellentesque vestibulum quis justo quis semper. Aenean dictum, est id tristique rutrum, sapien mi scelerisque tellus, nec lacinia dolor felis sit amet ante. Vestibulum lacus nulla, vehicula ornare fringilla sit amet, sollicitudin tempus nisl. Phasellus vel commodo nisi. Ut interdum erat non tortor tempus posuere. Vestibulum ut condimentum felis. Fusce sed tristique nunc. Phasellus nec enim mi. Suspendisse feugiat bibendum placerat. Sed volutpat rutrum dignissim. Sed imperdiet porttitor lacus.         
+                            Vivamus consequat quam lorem, vel consectetur odio consectetur non. Aliquam non nunc nibh. Vivamus feugiat sem eu ullamcorper sollicitudin. Curabitur malesuada est eu enim gravida feugiat. Aliquam a lobortis justo. Duis tristique consequat nisi nec congue. Vestibulum enim lacus, finibus eu posuere eu, consequat et eros. Curabitur eget tincidunt arcu. Nulla fringilla interdum risus sed ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.       
+                            In vel aliquam metus, a sodales justo. Cras pharetra justo ac ex porta, ut efficitur ligula dapibus. Nunc egestas dolor vitae gravida laoreet. Aenean viverra, diam in aliquam elementum, lorem ligula pretium leo, eget finibus metus lectus sed orci. Cras a risus tempor, ullamcorper ex quis, tempor velit. Vivamus ut sem faucibus, sollicitudin tellus a, tincidunt turpis. Nam maximus venenatis bibendum. Sed vitae dapibus enim. Pellentesque nisi risus, convallis sit amet condimentum id, ultricies eget neque. Mauris sit amet mauris in sem euismod dictum sed eu ex. Fusce interdum efficitur eros non volutpat. Nunc dictum mauris et massa convallis, vel faucibus massa vulputate. Sed eu gravida nisi. Maecenas dictum ipsum metus, vitae porttitor dolor volutpat consequat. Phasellus commodo pulvinar porta. Suspendisse ac tincidunt mi.
+                        </p>
                     </div>
+
                     <div class="container-info col-12" id="dataAbout">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <h2 class="data-tittle">Datos Personales</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                   <p class="info-parrafo"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod sapien dui, vel vestibulum nisl pulvinar placerat. Aliquam in egestas metus. Suspendisse diam diam, ullamcorper vitae mauris sit amet, vulputate iaculis massa. In venenatis erat ac odio luctus aliquet. Aenean egestas erat leo, sed vulputate tellus blandit id. In tincidunt cursus tortor, eu semper ipsum finibus id. Morbi id nisl nulla. Vivamus tellus dolor, volutpat nec lacinia ac, fringilla ac dui. Vivamus sit amet erat pharetra, pretium tortor at, vehicula lacus. Curabitur sit amet felis non nunc accumsan dignissim nec sit amet nunc. Nunc vitae felis ipsum. Quisque ullamcorper id justo ut elementum. Fusce finibus diam quis nunc blandit ultrices. Mauris sit amet magna urna.
+                        <div class="sticky-tittle">
+                            <h2 class="data-tittle">Estudios</h2>
+                        </div>
+                        
+                        <p class="info-parrafo"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod sapien dui, vel vestibulum nisl pulvinar placerat. Aliquam in egestas metus. Suspendisse diam diam, ullamcorper vitae mauris sit amet, vulputate iaculis massa. In venenatis erat ac odio luctus aliquet. Aenean egestas erat leo, sed vulputate tellus blandit id. In tincidunt cursus tortor, eu semper ipsum finibus id. Morbi id nisl nulla. Vivamus tellus dolor, volutpat nec lacinia ac, fringilla ac dui. Vivamus sit amet erat pharetra, pretium tortor at, vehicula lacus. Curabitur sit amet felis non nunc accumsan dignissim nec sit amet nunc. Nunc vitae felis ipsum. Quisque ullamcorper id justo ut elementum. Fusce finibus diam quis nunc blandit ultrices. Mauris sit amet magna urna.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu arcu cursus, egestas ipsum a, aliquet sem. Curabitur fringilla elit a tincidunt bibendum. Donec sit amet massa lorem. Aenean a nisi facilisis, posuere elit et, eleifend leo. Donec leo risus, fermentum at arcu in, eleifend pellentesque eros. Phasellus eu sem molestie, posuere felis sit amet, consequat diam. Mauris ac eros diam. Curabitur volutpat felis vitae nisi semper, eu finibus leo bibendum. Sed venenatis lobortis consequat. Nullam non ultricies urna. Nam sagittis lorem lacus, eget fermentum magna pellentesque vitae.                  
+                            Praesent suscipit leo interdum augue feugiat, sed rhoncus neque sodales. Nam tempus volutpat consectetur. Quisque non porttitor erat. In blandit semper leo ut mattis. Phasellus eget mauris dictum, congue elit in, cursus erat. Pellentesque vestibulum quis justo quis semper. Aenean dictum, est id tristique rutrum, sapien mi scelerisque tellus, nec lacinia dolor felis sit amet ante. Vestibulum lacus nulla, vehicula ornare fringilla sit amet, sollicitudin tempus nisl. Phasellus vel commodo nisi. Ut interdum erat non tortor tempus posuere. Vestibulum ut condimentum felis. Fusce sed tristique nunc. Phasellus nec enim mi. Suspendisse feugiat bibendum placerat. Sed volutpat rutrum dignissim. Sed imperdiet porttitor lacus.         
+                            Vivamus consequat quam lorem, vel consectetur odio consectetur non. Aliquam non nunc nibh. Vivamus feugiat sem eu ullamcorper sollicitudin. Curabitur malesuada est eu enim gravida feugiat. Aliquam a lobortis justo. Duis tristique consequat nisi nec congue. Vestibulum enim lacus, finibus eu posuere eu, consequat et eros. Curabitur eget tincidunt arcu. Nulla fringilla interdum risus sed ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.       
+                            In vel aliquam metus, a sodales justo. Cras pharetra justo ac ex porta, ut efficitur ligula dapibus. Nunc egestas dolor vitae gravida laoreet. Aenean viverra, diam in aliquam elementum, lorem ligula pretium leo, eget finibus metus lectus sed orci. Cras a risus tempor, ullamcorper ex quis, tempor velit. Vivamus ut sem faucibus, sollicitudin tellus a, tincidunt turpis. Nam maximus venenatis bibendum. Sed vitae dapibus enim. Pellentesque nisi risus, convallis sit amet condimentum id, ultricies eget neque. Mauris sit amet mauris in sem euismod dictum sed eu ex. Fusce interdum efficitur eros non volutpat. Nunc dictum mauris et massa convallis, vel faucibus massa vulputate. Sed eu gravida nisi. Maecenas dictum ipsum metus, vitae porttitor dolor volutpat consequat. Phasellus commodo pulvinar porta. Suspendisse ac tincidunt mi.
+                        </p>
 
-                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu arcu cursus, egestas ipsum a, aliquet sem. Curabitur fringilla elit a tincidunt bibendum. Donec sit amet massa lorem. Aenean a nisi facilisis, posuere elit et, eleifend leo. Donec leo risus, fermentum at arcu in, eleifend pellentesque eros. Phasellus eu sem molestie, posuere felis sit amet, consequat diam. Mauris ac eros diam. Curabitur volutpat felis vitae nisi semper, eu finibus leo bibendum. Sed venenatis lobortis consequat. Nullam non ultricies urna. Nam sagittis lorem lacus, eget fermentum magna pellentesque vitae.
-                                    
-                                    Praesent suscipit leo interdum augue feugiat, sed rhoncus neque sodales. Nam tempus volutpat consectetur. Quisque non porttitor erat. In blandit semper leo ut mattis. Phasellus eget mauris dictum, congue elit in, cursus erat. Pellentesque vestibulum quis justo quis semper. Aenean dictum, est id tristique rutrum, sapien mi scelerisque tellus, nec lacinia dolor felis sit amet ante. Vestibulum lacus nulla, vehicula ornare fringilla sit amet, sollicitudin tempus nisl. Phasellus vel commodo nisi. Ut interdum erat non tortor tempus posuere. Vestibulum ut condimentum felis. Fusce sed tristique nunc. Phasellus nec enim mi. Suspendisse feugiat bibendum placerat. Sed volutpat rutrum dignissim. Sed imperdiet porttitor lacus.
-                                    
-                                    Vivamus consequat quam lorem, vel consectetur odio consectetur non. Aliquam non nunc nibh. Vivamus feugiat sem eu ullamcorper sollicitudin. Curabitur malesuada est eu enim gravida feugiat. Aliquam a lobortis justo. Duis tristique consequat nisi nec congue. Vestibulum enim lacus, finibus eu posuere eu, consequat et eros. Curabitur eget tincidunt arcu. Nulla fringilla interdum risus sed ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                    
-                                    In vel aliquam metus, a sodales justo. Cras pharetra justo ac ex porta, ut efficitur ligula dapibus. Nunc egestas dolor vitae gravida laoreet. Aenean viverra, diam in aliquam elementum, lorem ligula pretium leo, eget finibus metus lectus sed orci. Cras a risus tempor, ullamcorper ex quis, tempor velit. Vivamus ut sem faucibus, sollicitudin tellus a, tincidunt turpis. Nam maximus venenatis bibendum. Sed vitae dapibus enim. Pellentesque nisi risus, convallis sit amet condimentum id, ultricies eget neque. Mauris sit amet mauris in sem euismod dictum sed eu ex. Fusce interdum efficitur eros non volutpat. Nunc dictum mauris et massa convallis, vel faucibus massa vulputate. Sed eu gravida nisi. Maecenas dictum ipsum metus, vitae porttitor dolor volutpat consequat. Phasellus commodo pulvinar porta. Suspendisse ac tincidunt mi.</p>
-                                   <p class="info-parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod sapien dui, vel vestibulum nisl pulvinar placerat. Aliquam in egestas metus. Suspendisse diam diam, ullamcorper vitae mauris sit amet, vulputate iaculis massa. In venenatis erat ac odio luctus aliquet. Aenean egestas erat leo, sed vulputate tellus blandit id. In tincidunt cursus tortor, eu semper ipsum finibus id. Morbi id nisl nulla. Vivamus tellus dolor, volutpat nec lacinia ac, fringilla ac dui. Vivamus sit amet erat pharetra, pretium tortor at, vehicula lacus. Curabitur sit amet felis non nunc accumsan dignissim nec sit amet nunc. Nunc vitae felis ipsum. Quisque ullamcorper id justo ut elementum. Fusce finibus diam quis nunc blandit ultrices. Mauris sit amet magna urna.
-
-                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu arcu cursus, egestas ipsum a, aliquet sem. Curabitur fringilla elit a tincidunt bibendum. Donec sit amet massa lorem. Aenean a nisi facilisis, posuere elit et, eleifend leo. Donec leo risus, fermentum at arcu in, eleifend pellentesque eros. Phasellus eu sem molestie, posuere felis sit amet, consequat diam. Mauris ac eros diam. Curabitur volutpat felis vitae nisi semper, eu finibus leo bibendum. Sed venenatis lobortis consequat. Nullam non ultricies urna. Nam sagittis lorem lacus, eget fermentum magna pellentesque vitae.
-                                    
-                                    Praesent suscipit leo interdum augue feugiat, sed rhoncus neque sodales. Nam tempus volutpat consectetur. Quisque non porttitor erat. In blandit semper leo ut mattis. Phasellus eget mauris dictum, congue elit in, cursus erat. Pellentesque vestibulum quis justo quis semper. Aenean dictum, est id tristique rutrum, sapien mi scelerisque tellus, nec lacinia dolor felis sit amet ante. Vestibulum lacus nulla, vehicula ornare fringilla sit amet, sollicitudin tempus nisl. Phasellus vel commodo nisi. Ut interdum erat non tortor tempus posuere. Vestibulum ut condimentum felis. Fusce sed tristique nunc. Phasellus nec enim mi. Suspendisse feugiat bibendum placerat. Sed volutpat rutrum dignissim. Sed imperdiet porttitor lacus.
-                                    
-                                    Vivamus consequat quam lorem, vel consectetur odio consectetur non. Aliquam non nunc nibh. Vivamus feugiat sem eu ullamcorper sollicitudin. Curabitur malesuada est eu enim gravida feugiat. Aliquam a lobortis justo. Duis tristique consequat nisi nec congue. Vestibulum enim lacus, finibus eu posuere eu, consequat et eros. Curabitur eget tincidunt arcu. Nulla fringilla interdum risus sed ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                    
-                                    In vel aliquam metus, a sodales justo. Cras pharetra justo ac ex porta, ut efficitur ligula dapibus. Nunc egestas dolor vitae gravida laoreet. Aenean viverra, diam in aliquam elementum, lorem ligula pretium leo, eget finibus metus lectus sed orci. Cras a risus tempor, ullamcorper ex quis, tempor velit. Vivamus ut sem faucibus, sollicitudin tellus a, tincidunt turpis. Nam maximus venenatis bibendum. Sed vitae dapibus enim. Pellentesque nisi risus, convallis sit amet condimentum id, ultricies eget neque. Mauris sit amet mauris in sem euismod dictum sed eu ex. Fusce interdum efficitur eros non volutpat. Nunc dictum mauris et massa convallis, vel faucibus massa vulputate. Sed eu gravida nisi. Maecenas dictum ipsum metus, vitae porttitor dolor volutpat consequat. Phasellus commodo pulvinar porta. Suspendisse ac tincidunt mi.</p>
-                                </div>
-                          </div> <!--Cierre Container bootstrap-->
-                        </div> <!--Cierre Container-->
+                        <p class="info-parrafo"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod sapien dui, vel vestibulum nisl pulvinar placerat. Aliquam in egestas metus. Suspendisse diam diam, ullamcorper vitae mauris sit amet, vulputate iaculis massa. In venenatis erat ac odio luctus aliquet. Aenean egestas erat leo, sed vulputate tellus blandit id. In tincidunt cursus tortor, eu semper ipsum finibus id. Morbi id nisl nulla. Vivamus tellus dolor, volutpat nec lacinia ac, fringilla ac dui. Vivamus sit amet erat pharetra, pretium tortor at, vehicula lacus. Curabitur sit amet felis non nunc accumsan dignissim nec sit amet nunc. Nunc vitae felis ipsum. Quisque ullamcorper id justo ut elementum. Fusce finibus diam quis nunc blandit ultrices. Mauris sit amet magna urna.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu arcu cursus, egestas ipsum a, aliquet sem. Curabitur fringilla elit a tincidunt bibendum. Donec sit amet massa lorem. Aenean a nisi facilisis, posuere elit et, eleifend leo. Donec leo risus, fermentum at arcu in, eleifend pellentesque eros. Phasellus eu sem molestie, posuere felis sit amet, consequat diam. Mauris ac eros diam. Curabitur volutpat felis vitae nisi semper, eu finibus leo bibendum. Sed venenatis lobortis consequat. Nullam non ultricies urna. Nam sagittis lorem lacus, eget fermentum magna pellentesque vitae.                  
+                            Praesent suscipit leo interdum augue feugiat, sed rhoncus neque sodales. Nam tempus volutpat consectetur. Quisque non porttitor erat. In blandit semper leo ut mattis. Phasellus eget mauris dictum, congue elit in, cursus erat. Pellentesque vestibulum quis justo quis semper. Aenean dictum, est id tristique rutrum, sapien mi scelerisque tellus, nec lacinia dolor felis sit amet ante. Vestibulum lacus nulla, vehicula ornare fringilla sit amet, sollicitudin tempus nisl. Phasellus vel commodo nisi. Ut interdum erat non tortor tempus posuere. Vestibulum ut condimentum felis. Fusce sed tristique nunc. Phasellus nec enim mi. Suspendisse feugiat bibendum placerat. Sed volutpat rutrum dignissim. Sed imperdiet porttitor lacus.         
+                            Vivamus consequat quam lorem, vel consectetur odio consectetur non. Aliquam non nunc nibh. Vivamus feugiat sem eu ullamcorper sollicitudin. Curabitur malesuada est eu enim gravida feugiat. Aliquam a lobortis justo. Duis tristique consequat nisi nec congue. Vestibulum enim lacus, finibus eu posuere eu, consequat et eros. Curabitur eget tincidunt arcu. Nulla fringilla interdum risus sed ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.       
+                            In vel aliquam metus, a sodales justo. Cras pharetra justo ac ex porta, ut efficitur ligula dapibus. Nunc egestas dolor vitae gravida laoreet. Aenean viverra, diam in aliquam elementum, lorem ligula pretium leo, eget finibus metus lectus sed orci. Cras a risus tempor, ullamcorper ex quis, tempor velit. Vivamus ut sem faucibus, sollicitudin tellus a, tincidunt turpis. Nam maximus venenatis bibendum. Sed vitae dapibus enim. Pellentesque nisi risus, convallis sit amet condimentum id, ultricies eget neque. Mauris sit amet mauris in sem euismod dictum sed eu ex. Fusce interdum efficitur eros non volutpat. Nunc dictum mauris et massa convallis, vel faucibus massa vulputate. Sed eu gravida nisi. Maecenas dictum ipsum metus, vitae porttitor dolor volutpat consequat. Phasellus commodo pulvinar porta. Suspendisse ac tincidunt mi.
+                        </p>
                     </div>
                 </div>
             </div>
