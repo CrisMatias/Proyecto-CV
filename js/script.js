@@ -1,3 +1,4 @@
+//Botones Sidebar
 $('.botnData').click(function() { 
     let listaBotones = $('.botnData');
     let listaDiv = $('.container-info')
@@ -15,6 +16,7 @@ $('.botnData').click(function() {
     }
 });
 
+//Botones Estudios
 $('.inactive-btn').hide('slow')
 $('.active-btn').click(function() { 
     let listaRow = $('.active-btn');
@@ -27,4 +29,22 @@ $('.active-btn').click(function() {
         }
     }
     
+});
+
+
+//Botones Experiencia Laboral
+
+$('.btnXP').click(function() { 
+    let listaBotones = $('.btnXP');
+    let listaDiv = $('.mas-info');
+    $(listaBotones).css('background-color', '');
+    for (let i = 0; i < listaBotones.length ; i++){
+        if(listaBotones[i].id == $(this).attr('id')){
+            $(listaDiv[i]).show('slow')
+            elemento = listaBotones[i];
+            $(elemento).css('background-color', '#DED29E');
+        }else{
+            $(listaDiv[i]).hide('slow')
+        }
+    }
 });
