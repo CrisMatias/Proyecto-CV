@@ -9,7 +9,7 @@ $('.botnData').click(function() {
             $(listaDiv[i]).show('slow')
             elemento = listaBotones[i]
             $(elemento).css('background-color', '#4D4637')
-            $(elemento).css('color', '#ffffff')
+            $(elemento).css('color', '#e7e4d3')
         }else{
             $(listaDiv[i]).hide('slow')
         }
@@ -17,8 +17,8 @@ $('.botnData').click(function() {
 });
 
 //Botones Estudios
-$('.inactive-btn').hide('slow')
-$('.active-btn').click(function() { 
+    $('.inactive-btn').hide()
+    $('.active-btn').click(function() { 
     let listaRow = $('.active-btn');
     let listaHidden = $('.inactive-btn')
     for (let i = 0; i < listaRow.length ; i++){
@@ -39,6 +39,10 @@ $('.btnXP').click(function() {
     let listaExp02 = $('.mas-info-mobile');
     let resolucion = $(window).width();
     $(botonExp).css('background-color', '');
+    $(botonExp).css('font-weight', '');
+    $(botonExp).css('border-color', '');
+    $(botonExp).css('border-style', '');
+    $(botonExp).css('border-width', '',);
     for (let i = 0; i < botonExp.length ; i++){
         
         if(resolucion > 992){
@@ -46,6 +50,10 @@ $('.btnXP').click(function() {
                 $(listaExp01[i]).show('slow')
                 elemento = botonExp[i];
                 $(elemento).css('background-color', '#DED29E');
+                $(elemento).css('font-weight', 'bolder');
+                $(elemento).css('border-color', '#4D4637');
+                $(elemento).css('border-style', 'solid');
+                $(elemento).css('border-width', '2px',);
             }else{
                 $(listaExp01[i]).hide('slow')
             }
