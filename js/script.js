@@ -16,6 +16,31 @@ $('.botnData').click(function() {
     }
 });
 
+//Botones Para Copiar
+const elemento = document.querySelector('.contenido-texto');
+
+document.querySelector('#btn-copy').addEventListener('click',()=>{
+    copyToClipBoard(elemento);
+})
+
+function copyToClipBoard(elemento){
+    const inputOculto = document.createElement('input');
+
+    inputOculto.setAttribute('value', elemento.innerText);
+
+    document.body.appendChild(inputOculto);
+
+    inputOculto.select();
+
+    document.execCommand('copy');
+
+    document.body.removeChild(inputOculto);
+
+   
+}
+
+
+
 //Botones Estudios
     $('.inactive-btn').hide()
     $('.active-btn').click(function() { 
@@ -30,7 +55,6 @@ $('.botnData').click(function() {
     }
     
 });
-
 
 //Botones Experiencia Laboral
 $('.btnXP').click(function() { 

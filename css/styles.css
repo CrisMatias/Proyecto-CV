@@ -270,6 +270,7 @@ body{
     font-size: calc(1.0rem + .5vw);
     font-weight: bolder;
     color: #4D4637;
+    justify-content: space-between;
 }
 
 .info-subparrafo{
@@ -313,6 +314,15 @@ a:link:hover, a:visited:hover, a:active:hover {
 
 .bg-light {
     background-color: #DED29E !important;
+}
+
+.icono-font{
+    cursor: pointer;
+}
+
+.icono-font:hover{
+    transition: transform 0,5s;
+    transform: scale(1.1);
 }
 
 /* Media query para resoluciones mayores a 992px */
