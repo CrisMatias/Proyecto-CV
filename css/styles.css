@@ -247,12 +247,38 @@ body{
     list-style: none;
 }
 
+.container-conocimientos{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    gap: 5px;
+}
+
 .info-parrafo{
     margin-bottom: 2%;
     text-align: center;
     font-size: calc(1.0rem + .5vw);
     font-weight: bolder;
     color: #4D4637;
+}
+
+.info-subparrafo{
+    color: #4D4637;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    width: max-content;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+a:link:hover, a:visited:hover, a:active:hover {
+    color: #8d7f63;
+    transition: transform .5s;
+    transform: scale(1.1);
 }
 
 .bg-light {
