@@ -33,18 +33,31 @@ $('.active-btn').click(function() {
 
 
 //Botones Experiencia Laboral
-
 $('.btnXP').click(function() { 
-    let listaBotones = $('.btnXP');
-    let listaDiv = $('.mas-info');
-    $(listaBotones).css('background-color', '');
-    for (let i = 0; i < listaBotones.length ; i++){
-        if(listaBotones[i].id == $(this).attr('id')){
-            $(listaDiv[i]).show('slow')
-            elemento = listaBotones[i];
-            $(elemento).css('background-color', '#DED29E');
-        }else{
-            $(listaDiv[i]).hide('slow')
+    let botonExp = $('.btnXP');
+    let listaExp01 = $('.mas-info-desk');
+    let listaExp02 = $('.mas-info-mobile');
+    let resolucion = $(window).width();
+    $(botonExp).css('background-color', '');
+    for (let i = 0; i < botonExp.length ; i++){
+        
+        if(resolucion > 992){
+            if(botonExp[i].id == $(this).attr('id')){
+                $(listaExp01[i]).show('slow')
+                elemento = botonExp[i];
+                $(elemento).css('background-color', '#DED29E');
+            }else{
+                $(listaExp01[i]).hide('slow')
+            }
+        }
+        if(resolucion < 992){
+            if(botonExp[i].id == $(this).attr('id')){
+                $(listaExp02[i]).show('slow')
+                elemento = botonExp[i];
+                $(elemento).css('background-color', '#DED29E');
+            }else{
+                $(listaExp02[i]).hide('slow')
+            }
         }
     }
 });

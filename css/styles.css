@@ -264,22 +264,23 @@ body{
     #navbar-menu{
         display: none;
     }
-
+    .mas-info-mobile{
+        display: none!important;
+    }
 }
 
-/* Media query para resoluciones menores a 992px */
-@media screen and (max-width: 992px) {
+/* Media query para resoluciones menores a 991px */
+@media screen and (max-width: 991px) {
     #sidebar-menu{
         display: none !important;
     }
 
-    #navbar-menu{
-        position: sticky!important;
-        width: 100%!important;
-    }
-
     .photo{
         width:120px;
+    }
+
+    .mas-info-desk{
+        display: none!important;
     }
 
     .btn-efect{
@@ -295,6 +296,14 @@ body{
         height: 100%;
     }
 
+    .laboral-xp{
+        width:100%;
+        border: #4D4637 solid 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
 }
 
 
