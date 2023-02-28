@@ -12,10 +12,10 @@
 <body>
     <div class="container-fluid"> <!--Container fluid-->
         <nav id="navbar-menu" class="navbar navbar-expand-lg navbar-light bg-light sticky-top"> <!--NavBar Bootstrap-->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="https://ar.linkedin.com/" target="_blank">
               <img src="images/fake-face.jpg" class="photo d-inline-block align-top" alt=""> <!--Foto De perfil-->
             </a>
-            <h3>Brett Albert Sutton</h3>
+            <h3>Brett Sutton</h3>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button> <!--Boton para modo mobile-->
@@ -46,8 +46,10 @@
             <div class="col-lg-3" id="sidebar-menu"><!--Columna izquierda-->
                 <div id="perfil"> <!--Foto de perfil-->
                     <div class="photo-name">
-                        <img class="photo" src="images/fake-face.jpg">
-                        <h2 class="user-name">Brett Sutton</h2>
+                        <a href="https://ar.linkedin.com/" target="_blank" title="Ir a mi perfil de linkedin">
+                            <img class="photo" src="images/fake-face.jpg">
+                            <h2 class="user-name">Brett Sutton</h2>
+                        </a>
                     </div>
                 </div>  <!-- fin Foto de perfil-->
                 <div class="container-information">  <!--Botones-->
@@ -66,7 +68,8 @@
                             <h2 class="data-tittle">Datos Personales</h2>
                         </div>
                         <ul class="lista-info">
-                            <li class="info-parrafo" id="btnToCopyName"><b>Nombre Completo:</b> Brett Albert Sutton <i class="icono-font fa-regular fa-copy" title="Copiar"></i></li>
+                            <li class="info-parrafo"><b>Nombre Completo:</b><span class="contenido-texto" id="2"> Brett Albert Sutton </span><i class="icono-font far fa-copy" id="0"></i>
+                            </li>
                             <li class="info-parrafo"><b>Fecha de Nacimiento:</b> 12/06/1990</li>
                             <li class="info-parrafo"><b>Edad:</b> 40 años</li>
                             <li class="info-parrafo"><b>Estado Civil:</b> Soltero</li>
@@ -74,9 +77,10 @@
                             <li class="info-parrafo"><b>Estado:</b> California</li>
                             <li class="info-parrafo"><b>Ciudad:</b> San Francisco</li>
                             <li class="info-parrafo"><b>Dirección:</b> Fake Street 987</li>
-                            <li class="info-parrafo" id="btnToCopyPhone"><b>Teléfono:</b><span class="contenido-texto"> 123-456-7890 </span><i class="icono-font far fa-copy" id="btn-copy" title="Copiar"></i>
-                            </button></li>
-                            <li class="info-parrafo" id="btnToCopyMail"><b>Email:</b> albertbret@email.com <i class="icono-font fa-regular fa-copy" title="Copiar"></i></li>
+                            <li class="info-parrafo"><b>Teléfono:</b><span class="contenido-texto" id="1"> 123-456-7890 </span><i class="icono-font far fa-copy" id="1"></i>
+                            </li>
+                            <li class="info-parrafo"><b>Email:</b><span class="contenido-texto" id="2"> albertbret@email.com </span><i class="icono-font far fa-copy" id="2"></i>
+                            </li>
                          </ul>
                     </div><!--Cierre container info-personal-->
         
@@ -84,18 +88,18 @@
                         <div class="sticky-tittle">
                             <h2 class="data-tittle">Estudios</h2>
                         </div>
+                        <h4 class="data-subtittle">Mis logros educativos</h4>
+                        <p class="info-subparrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, sapiente. Ullam, tempore tempora non velit at ad voluptatem excepturi dicta! Omnis magnam vel harum at doloremque labore voluptate laudantium numquam.</p>
+                        <ul class="lista-desordenada">
+                            <li>Mayor Promedio.</li>
+                            <li>Mayor Nro. de asistencia.</li>
+                            <li>Puntualidad.</li>
+                            <li>Mejor participación en clases.</li>
+                            <li>Presidente centro de estudiantes.</li>
+                        </ul>
+                        <br>
                         <div class="container-sub-info">
                             <div class="sub-container-info">
-                                <h4 class="data-subtittle">Mis logros educativos</h4>
-                                <p class="info-subparrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, sapiente. Ullam, tempore tempora non velit at ad voluptatem excepturi dicta! Omnis magnam vel harum at doloremque labore voluptate laudantium numquam.</p>
-                                <ul class="lista-desordenada">
-                                    <li>Mayor Promedio.</li>
-                                    <li>Mayor Nro. de asistencia.</li>
-                                    <li>Puntualidad.</li>
-                                    <li>Mejor participación en clases.</li>
-                                    <li>Presidente centro de estudiantes.</li>
-                                </ul>
-                                <br>
                                 <div class="active-btn ov-btn-slide-top" id="botonPri1">
                                     <h3 class="subtittle-education">Titulo Falso 1</h3>
                                 </div>
@@ -347,7 +351,7 @@
 
                                 <a class="info-subparrafo" href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)" target="_blank" title="Mas información">Java</a>
                                 <li class="progress">
-                                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">50</div>
+                                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">50%</div>
                                 </li>
 
                                 <a class="info-subparrafo" href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" title="Mas información">JavaScript</a>
@@ -461,6 +465,9 @@
                 </div>
             </div><!-- Fin columna Derecha-->
         </div><!--Fin Grid Bootstrap-->
+        <div class="mensaje-copy sticky-top" id=""> <!--Mensaje de Copia-->
+            <p>¡Copiado al portapapeles!</p>
+        </div>
     </div> <!--Container fluid-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/5be496a49d.js" crossorigin="anonymous"></script>

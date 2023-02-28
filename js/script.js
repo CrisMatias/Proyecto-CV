@@ -7,7 +7,7 @@ $('.botnData').click(function() {
     for (let i = 0; i < listaBotones.length ; i++){
         if(listaBotones[i].id == $(this).attr('id')){
             $(listaDiv[i]).show('slow')
-            elemento = listaBotones[i]
+            const elemento = listaBotones[i]
             $(elemento).css('background-color', '#4D4637')
             $(elemento).css('color', '#e7e4d3')
         }else{
@@ -19,14 +19,64 @@ $('.botnData').click(function() {
 //Botones Para Copiar
 const elemento = document.querySelector('.contenido-texto');
 
-document.querySelector('#btn-copy').addEventListener('click',()=>{
-    copyToClipBoard(elemento);
+// document.querySelector('#btn-copy', '#btn-copy1').addEventListener('click',()=>{
+
+//     document.querySelector('.mensaje-copy').classList.add('show');
+//     copyToClipBoard(elemento);
+
+//     setTimeout(()=>{
+//         document.querySelector('.mensaje-copy').classList.remove('show');
+//     },1300);
+// })
+
+// function copyToClipBoard(elemento){
+//     const inputOculto = document.createElement('input');
+
+//     inputOculto.setAttribute('value', elemento.innerText);
+
+//     document.body.appendChild(inputOculto);
+
+//     inputOculto.select();
+
+//     document.execCommand('copy');
+
+//     document.body.removeChild(inputOculto);
+
+   
+// }
+
+// document.getElementById('btn-copy', 'btn-copy2').addEventListener('click', () =>{
+//     alert("Hola Mundo")
+// })
+
+$('.icono-font').click(function(){
+    let listaBtn = $('.icono-font')
+    const copiarTexto = $('.contenido-texto')
+    const textoACopiar = $(copiarTexto)
+    copyToClipBoard(textoACopiar);
+    for (let i = 0; i < listaBtn.length ; i++){
+        if(listaBtn[i].id == $(this).attr('id') ){
+            document.querySelector('.mensaje-copy').classList.add('show');
+             setTimeout(()=>{
+            document.querySelector('.mensaje-copy').classList.remove('show');
+            },1300);
+            copyToClipBoard(textoACopiar[i]);
+        }
+    }
+    function copyToClipBoard(textoACopiar){
+        const inputOculto = document.createElement('input');
+        inputOculto.setAttribute('value', textoACopiar.innerText);
+        document.body.appendChild(inputOculto);
+        inputOculto.select();
+        document.execCommand('copy');
+        document.body.removeChild(inputOculto);
+    }
 })
 
-function copyToClipBoard(elemento){
+function copyToClipBoard(textoACopiar){
     const inputOculto = document.createElement('input');
 
-    inputOculto.setAttribute('value', elemento.innerText);
+    inputOculto.setAttribute('value', textoACopiar.innerText);
 
     document.body.appendChild(inputOculto);
 
@@ -39,8 +89,6 @@ function copyToClipBoard(elemento){
    
 }
 
-
-
 //Botones Estudios
     $('.inactive-btn').hide()
     $('.active-btn').click(function() { 
@@ -49,7 +97,7 @@ function copyToClipBoard(elemento){
     for (let i = 0; i < listaRow.length ; i++){
         if(listaRow[i].id == $(this).attr('id') ){
             $(listaHidden[i]).toggle('slow')
-            colores = listaRow[i]
+            const colores = listaRow[i]
             $(colores).toggleClass('eduBtnActive');
         }
     }
@@ -72,7 +120,7 @@ $('.btnXP').click(function() {
         if(resolucion > 992){
             if(botonExp[i].id == $(this).attr('id')){
                 $(listaExp01[i]).show('slow')
-                elemento = botonExp[i];
+                const elemento = botonExp[i];
                 $(elemento).css('background-color', '#DED29E');
                 $(elemento).css('font-weight', 'bolder');
                 $(elemento).css('border-color', '#4D4637');
@@ -85,7 +133,7 @@ $('.btnXP').click(function() {
         if(resolucion < 992){
             if(botonExp[i].id == $(this).attr('id')){
                 $(listaExp02[i]).show('slow')
-                elemento = botonExp[i];
+                const elemento = botonExp[i];
                 $(elemento).css('background-color', '#DED29E');
             }else{
                 $(listaExp02[i]).hide('slow')
