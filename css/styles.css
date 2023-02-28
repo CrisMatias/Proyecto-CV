@@ -292,10 +292,13 @@ body{
 }
 
 .lista-desordenada{
-    color: #4D4637;
     margin:10px 0 0 0;
     padding-left: 20px;
     box-sizing: border-box;
+}
+
+.lista-desordenada > li{
+    color: #4D4637;
     font-size: calc(.5rem + .7vw);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight:bold;
@@ -395,6 +398,10 @@ a:link:hover, a:visited:hover, a:active:hover {
     .container-info{
         overflow: hidden;
         height: 100%;
+    }
+
+    .lista-desordenada > li{
+        font-size: calc(.5rem + 2vw);
     }
 
     .laboral-xp{
