@@ -19,36 +19,6 @@ $('.botnData').click(function() {
 //Botones Para Copiar
 const elemento = document.querySelector('.contenido-texto');
 
-// document.querySelector('#btn-copy', '#btn-copy1').addEventListener('click',()=>{
-
-//     document.querySelector('.mensaje-copy').classList.add('show');
-//     copyToClipBoard(elemento);
-
-//     setTimeout(()=>{
-//         document.querySelector('.mensaje-copy').classList.remove('show');
-//     },1300);
-// })
-
-// function copyToClipBoard(elemento){
-//     const inputOculto = document.createElement('input');
-
-//     inputOculto.setAttribute('value', elemento.innerText);
-
-//     document.body.appendChild(inputOculto);
-
-//     inputOculto.select();
-
-//     document.execCommand('copy');
-
-//     document.body.removeChild(inputOculto);
-
-   
-// }
-
-// document.getElementById('btn-copy', 'btn-copy2').addEventListener('click', () =>{
-//     alert("Hola Mundo")
-// })
-
 $('.icono-font').click(function(){
     let listaBtn = $('.icono-font')
     const copiarTexto = $('.contenido-texto')
